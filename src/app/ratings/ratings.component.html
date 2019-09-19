@@ -1,0 +1,24 @@
+<div class="container-fluid">
+		<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+			{{ userForm.value | json }}
+			<div class="form-group">
+				<label>feedback1</label>
+                <input type="number" class="form-control is invalid" name="feedback1" [(ngModel)]="value1">
+                <label>feedback2</label>
+                <input type="number" class="form-control is invalid" name="feedback2" [(ngModel)]="value2">
+                <label>feedback3</label>
+                <input type="number" class="form-control is invalid" name="feedback3" [(ngModel)]="value3">
+                <label>feedback4</label>
+                <input type="number" class="form-control is invalid" name="feedback4" [(ngModel)]="value4">
+                <label>feedback5</label>
+                <input type="number" class="form-control is invalid" name="feedback5" [(ngModel)]="value5">
+                <label>feedback6</label>
+                <input type="number" class="form-control is invalid" name="feedback6" [(ngModel)]="value6">
+                
+			</div>
+		</form>
+	</div>
+	
+    <button class="btn btn-primary" (click) = "save()" >submit</button>
+    
+    <router-outlet></router-outlet>

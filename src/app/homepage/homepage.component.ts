@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../homepage/homepage.service';
+import {homepage } from '../homepage/homepage.model';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-homepage',
@@ -18,5 +20,6 @@ export class HomepageComponent implements OnInit {
 
     });
   }
+  
 
 }

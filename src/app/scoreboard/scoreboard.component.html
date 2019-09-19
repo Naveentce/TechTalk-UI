@@ -1,9 +1,14 @@
-<!-- <div class="container">
-    <label>
-      Email:
-      <input type="text" [formControl]="name">
-    </label>
-    <p>
-      Value: {{ name.value }}
-    </p>
-  </div> -->
+<div class="container-fluid">
+		<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+			{{ userForm.value | json }}
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" class="form-control is invalid" name="username" [(ngModel)]="empname">
+			</div>
+		</form>
+	</div>
+	
+    <button class="btn btn-primary" (click) = "save()" >submit</button>
+
+    <router-outlet></router-outlet>
+    

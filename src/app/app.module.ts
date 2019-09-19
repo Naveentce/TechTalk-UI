@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
-// import { DataService } from './data.service';
 import { HeadermenuComponent } from './headermenu/headermenu.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +13,7 @@ import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
 import { Team1Component } from './team1/team1.component';
 import { Team2Component } from './team2/team2.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { RatingsComponent } from './ratings/ratings.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     MeetTheTeamComponent,
     Team1Component,
     Team2Component,
-    ScoreboardComponent
+    ScoreboardComponent,
+    RatingsComponent
     
     
   ],

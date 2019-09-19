@@ -6,18 +6,16 @@ import { Observable } from 'rxjs';
 @Injectable({
     providedIn: 'root'
 })
-export class ScoreService {
+export class RatingsService {
 
-    apuURL = 'http://localhost:8080/score';
+    apuURL = 'http://localhost:8080/ratings';
 
     constructor(private _http: HttpClient){ }
 
-    saveEmployee(empname: any) : Observable<any>{
+    savefeedback(ratings: any) : Observable<any>{
 
-        return this._http.post(this.apuURL, empname);
+        return this._http.post(this.apuURL, ratings);
 
     }
 
 }
-
-  
