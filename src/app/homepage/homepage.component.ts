@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../homepage/homepage.service';
+// import { DataService } from '../homepage/homepage.service';
 import {homepage } from '../homepage/homepage.model';
 import { from } from 'rxjs';
 
@@ -9,16 +9,16 @@ import { from } from 'rxjs';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  users;
-  constructor(private apiservice: DataService) { }
+  // users;
+  // constructor(private apiservice: DataService) { }
 
   ngOnInit() {
     
-    this.apiservice.getUsers().subscribe((data)=>{
-      console.log(data);
-      this.users = data;
+    // this.apiservice.getUsers().subscribe((data)=>{
+    //   console.log(data);
+    //   this.users = data;
 
-    });
+//    });
   }
   
 

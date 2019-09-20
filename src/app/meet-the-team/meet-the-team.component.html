@@ -1,59 +1,33 @@
-<!-- <div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Meet THE Team</h2>
-					<p>Tech Talk is not only Knowledge transfer session, Major reason to conncet the people with fun filled activity </p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/siddarth.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Tech Talk 2.0</span>
-							<h3><a href="#">Special Guest</a></h3>
-							<p>________</p>
-							<p>Descripaton</p>
-							<p>______About guest______</p>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/unstoppablee.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Tech Talk 2.0</span>
-							<h3><a href="#">Unstoppable</a></h3>
-							<h4>Topic: Pivotal Cloud Factory </h4>
-							<p> persenter: Naveen Chandran Selvaraj</p>
-							<p></p>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/avengers.png);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Tech Talk 2.0</span>
-							<h3><a href="#">Avengers</a></h3>
-							<h4>Topic: Fortify</h4>
-							<p> persenter: Mohana Kesavalu</p>
-							<p> </p>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	
-	<div *ngFor = 'let user of users'>
+<table>
+<thead>
+	<th>s.no</th>
+	<th>Employee name</th>
+	<th>Employee Id</th>
+	<th>Designation</th>
+	<th> team_name</th>
+	<th>Busniess Unit</th> 
+</thead>
+<tbody>
+	<tr *ngFor = 'let user of users'>
+		<td>{{user.id}}</td>
+		<td>{{user.empname}}</td>
+		<td>{{user.empID}}</td>
+		<td>{{user.designation}}</td>
+		<td>{{user.team_name}}</td>
+		<td>{{user.bu}}</td>
+	</tr>
+</tbody>
+
+</table>	
+
+
+	<!-- <div *ngFor = 'let user of users'>
 		<ul>
 		<li>
 			<p> {{user.id}} - {{user.empname}} - {{user.empID}} - {{user.designation}} - {{user.team_name}} - {{user.bu}}</p>
 		</li>
 		</ul>
 		
-	</div>
+	</div> -->
 	
 	<router-outlet></router-outlet>
