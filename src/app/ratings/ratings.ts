@@ -5,7 +5,6 @@ export class Ratings{
     value4: string;
     value5: string;
     value6: string;
-
     constructor(value1: string, value2: string, value3: string, value4: string, value5: string, value6: string ){
         this.value1 = value1;
         this.value2 = value2;

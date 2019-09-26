@@ -1,24 +1,72 @@
 <div class="container-fluid">
-		<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
-
-			<div class="form-group">
-				<label>Presentation had effective visual aids</label>
-                <input type="number" class="form-control is invalid" name="feedback1" [(ngModel)]="value1">
-                <label>The Presentation was concise and very informative</label>
-                <input type="number" class="form-control is invalid" name="feedback2" [(ngModel)]="value2">
-                <label>The presentation had some Technical depth</label>
-                <input type="number" class="form-control is invalid" name="feedback3" [(ngModel)]="value3">
-                <label>The presenter enthusiasm engaged the audience to a greater extent</label>
-                <input type="number" class="form-control is invalid" name="feedback4" [(ngModel)]="value4">
-                <label>Do you feel the topic is relevant to the Project ?</label>
-                <input type="number" class="form-control is invalid" name="feedback5" [(ngModel)]="value5">
-                <label>How well the presenter interacted with the audience ?</label>
-                <input type="number" class="form-control is invalid" name="feedback6" [(ngModel)]="value6">
-                
-			</div>
-		</form>
-	</div>
-	
+    <div class="form-group col-md-6">
+            <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+                <h1 style="font-weight: bold"><i>AVENGERS</i></h1>
+                <div class="form-group">
+                    <label><i>Presentation had effective visual aids:</i></label>
+                    <br>
+                    <ngb-rating [(rate)]="value1"></ngb-rating>
+                    <hr>
+                    <label><i>The Presentation was concise and very informative:</i></label>
+                    <br>
+                    <ngb-rating [(rate)]="value2"></ngb-rating>
+                    <hr>
+                    <label><i>The presentation had some Technical depth:</i></label>
+                    <br>
+                    <ngb-rating [(rate)]="value3"></ngb-rating>
+                    <hr>
+                    <label><i>The presenter enthusiasm engaged the audience to a greater extent:</i></label>
+                    <br>
+                    <ngb-rating [(rate)]="value4"></ngb-rating>
+                    <hr>
+                    <label><i>Do you feel the topic is relevant to the Project ?</i></label>
+                    <br>
+                    <ngb-rating [(rate)]="value5"></ngb-rating>
+                    <hr>
+                    <label><i>How well the presenter interacted with the audience ?</i></label>
+                    <br>
+                    <ngb-rating [(rate)]="value6"></ngb-rating>
+                    <hr>
+                    
+                </div>
+            </form>
+        </div>
+        <div class="form-group col-md-6">
+                <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+                    <h1 style="font-weight: bold"><i>UNSTOPPABLE</i></h1>
+                    <div class="form-group">
+                            <label><i>Presentation had effective visual aids:</i></label>
+                            <br>
+                            <ngb-rating [(rate)]="value7"></ngb-rating>
+                            <hr>
+                            <label><i>The Presentation was concise and very informative:</i></label>
+                            <br>
+                            <ngb-rating [(rate)]="value8"></ngb-rating>
+                            <hr>
+                            <label><i>The presentation had some Technical depth:</i></label>
+                            <br>
+                            <ngb-rating [(rate)]="value9"></ngb-rating>
+                            <hr>
+                            <label><i>The presenter enthusiasm engaged the audience to a greater extent:</i></label>
+                            <br>
+                            <ngb-rating [(rate)]="value10"></ngb-rating>
+                            <hr>
+                            <label><i>Do you feel the topic is relevant to the Project ?</i></label>
+                            <br>
+                            <ngb-rating [(rate)]="value11"></ngb-rating>
+                            <hr>
+                            <label><i>How well the presenter interacted with the audience ?</i></label>
+                            <br>
+                            <ngb-rating [(rate)]="value12"></ngb-rating>
+                            <hr>
+                            
+                        </div>
+                </form>
+            </div>
+</div>
+    <input type="number" name="value13" [(ngModel)] = "value13">
     <button class="btn btn-primary" (click) = "save()" >submit</button>
+x
+    
     
     <router-outlet></router-outlet>

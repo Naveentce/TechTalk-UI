@@ -1,33 +1,30 @@
-<table>
+<!-- <div class="bg"> -->
+<div>
+<table  align="center" >
 <thead>
-	<th>s.no</th>
-	<th>Employee name</th>
-	<th>Employee Id</th>
-	<th>Designation</th>
-	<th> team_name</th>
-	<th>Busniess Unit</th> 
+	<tr>
+	<th scope="col" style="padding: 15px;">S. No</th>
+	<th scope="col">Employee Name</th>
+	<th scope="col">Employee Id</th>
+	<th scope="col">Designation</th>
+	<th scope="col">Team Name</th>
+	<th scope="col">Busniess Unit</th>
+	<th scope="col">Topic ID</th> 
+</tr>
 </thead>
 <tbody>
 	<tr *ngFor = 'let user of users'>
-		<td>{{user.id}}</td>
+		<th scope="row">{{user.id}}</th>
 		<td>{{user.empname}}</td>
 		<td>{{user.empID}}</td>
 		<td>{{user.designation}}</td>
 		<td>{{user.team_name}}</td>
 		<td>{{user.bu}}</td>
+		<td>{{user.topic_id}}</td>
 	</tr>
 </tbody>
-
 </table>	
+</div>
 
 
-	<!-- <div *ngFor = 'let user of users'>
-		<ul>
-		<li>
-			<p> {{user.id}} - {{user.empname}} - {{user.empID}} - {{user.designation}} - {{user.team_name}} - {{user.bu}}</p>
-		</li>
-		</ul>
-		
-	</div> -->
-	
-	<router-outlet></router-outlet>
+<router-outlet></router-outlet>

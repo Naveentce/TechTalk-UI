@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+
+import { AgGridModule } from 'ag-grid-angular';
 
 import { AppComponent } from './app.component';
 
@@ -33,7 +36,9 @@ import { RatingsComponent } from './ratings/ratings.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    AgGridModule.withComponents(null)
   ],
   providers: [],
   // providers: [DataService],

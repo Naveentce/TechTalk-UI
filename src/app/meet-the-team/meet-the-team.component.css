@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+
+}
+th {
+    height: 50px;
+}
+
+thead {
+    background-color: black; color:white;
+}
+.footer {
+    margin-top: 280px;
+}
+.bg{
+    background: url(../../assets/images/ocean.jpeg) repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
