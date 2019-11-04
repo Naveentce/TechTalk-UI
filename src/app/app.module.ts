@@ -17,6 +17,8 @@ import { Team1Component } from './team1/team1.component';
 import { Team2Component } from './team2/team2.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import { RatingsComponent } from './ratings/ratings.component';
+import { RulesComponent } from './rules/rules.component';
+import { TopicsComponent } from './topics/topics.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { RatingsComponent } from './ratings/ratings.component';
     Team1Component,
     Team2Component,
     ScoreboardComponent,
-    RatingsComponent
+    RatingsComponent,
+    RulesComponent,
+    TopicsComponent
     
     
   ],

@@ -1,33 +1,23 @@
-<div style="min-height: 520px">
-<div style="float:left; margin-left: 200px">
-    <img src="../../assets/images/unstoppable.png" style="height: 300px; width: 300px;">
-    <h1 style="text-align: center"><i> SCORE </i></h1>
-    <h1 style="text-align: center"><i>1939</i></h1>
-</div>
-<div style="float:right;  margin-right: 200px">
-    <img src="../../assets/images/avengers.png" style="height: 300px; width: 300px;">
-    <h1 style="text-align: center"><i>SCORE</i></h1>
-    <h1 style="text-align: center"><i>1887</i></h1>
-</div>
-</div>
-<footer >
-        <div class="row copyright">
-				<div class="col-md-12 text-center">
-					<small class="block">&copy;copyright 2019 unstoppables</small> 
-						<div>
-						<small class="block">Designed by <a href="#" target="_blank">vignesh G R</a> </small>
-					</div>
-        <div>     
-		<a href="#"><i class="icon-twitter"></i></a>&nbsp;
-		<a href="#"><i class="icon-facebook"></i></a>&nbsp;
-		<a href="#"><i class="icon-linkedin"></i></a>&nbsp;
-        <a href="#"><i class="icon-dribbble"></i></a>&nbsp;
+
+<div class="flex-container ">
+<div class="card">
+        <img src = "../../assets/images/unstoppableee.png" alt="Avatar" style="width:100%">
+        <div class="container">
+                <div class="h1">score</div>
+                <div class="h1" *ngIf="score[0].id % 2 != 0">{{score[0].feed1 + score[0].feed2 + score[0].feed3 + score[0].feed4 + score[0].feed5 + score[0].feed6}} </div>
+                
+        </div>
+
     </div>
+    <div class="card">
+        <img src = "../../assets/images/avengers.png" alt="Avatar" style="width:100%">
+        <div class="container">
+                <div class="h1" style="margin-top: 65px">score</div>
+                <div class="h1" *ngIf="score[1].id % 2==0">{{score[1].feed1 + score[1].feed2 + score[1].feed3 + score[1].feed4 + score[1].feed5 + score[1].feed6}} </div>
+                <!-- <h1 *ngFor="let scores of score">{{scores.feed1 + scores.feed2 + scores.feed3 + scores.feed4 + scores.feed5 + scores.feed6  }}</h1> -->
+                <!-- <h1>{{score1}}</h1> -->
+        </div>  
+    </div>	
 </div>
-</div>
-</footer>
-
-
-
 
 <router-outlet></router-outlet>

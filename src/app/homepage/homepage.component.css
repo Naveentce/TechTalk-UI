@@ -6,12 +6,13 @@ h2 {
     font-style: italic;
 }
 .bg-image {
-    background: url(../../assets/images/image.png); 
+    background: url(../../assets/images/glassball.jpg); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: contain;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
  .hei {
      min-height: 500px;

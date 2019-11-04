@@ -1,0 +1,13 @@
+table, th, td, tr {
+    border: 1px solid black;
+}
+.vi{
+    
+    margin-top: 0px;
+}
+td {
+    text-align: center;
+}
+.table1{
+    margin-top: 0px;
+}

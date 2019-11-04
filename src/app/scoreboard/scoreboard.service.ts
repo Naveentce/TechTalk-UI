@@ -2,6 +2,7 @@ import { HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Score } from './scoreboard.model';
 
 @Injectable({
     providedIn: 'root'
@@ -12,9 +13,10 @@ export class ScoreService {
 
     constructor(private _http: HttpClient){ }
 
-    saveEmployee(empname: any) : Observable<any>{
+    saveScore(score: any) : Observable<any>{
 
-        return this._http.post(this.apuURL, empname);
+        return this._http.get<Score[]>(this.apuURL);
+        
 
     }
 

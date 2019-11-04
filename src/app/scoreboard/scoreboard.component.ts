@@ -9,18 +9,19 @@ import {ScoreService } from '../scoreboard/scoreboard.service';
   styleUrls: ['./scoreboard.component.css']
 })
 export class ScoreboardComponent implements OnInit {
- empname: String = '' ;
+ score;
+ score1;
   constructor(private scoreService: ScoreService) { }
 
   ngOnInit() {
+    this.scoreService.saveScore(this.score).subscribe( data => {
+      console.log(data);
+      return this.score = data;
+    });
+
+
     
   
-  }
-  save(){
-    console.log(this.empname);
-    this.scoreService.saveEmployee(this.empname).subscribe( data => {
-      console.log(data);
-    });
   }
 
 }
