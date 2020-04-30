@@ -23,7 +23,7 @@
     "ag-grid-angular": "^21.2.1",
     "ag-grid-community": "^21.2.1",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-bootstrap": "^1.6.3",
     "rxjs": "~6.4.0",
     "script-ext-html-webpack-plugin": "^2.1.4",
